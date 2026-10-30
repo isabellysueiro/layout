@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    /* puxa a classe cabecalho do header */
+    background-color: #FFFFFF;
+    /* Define a cor do cabecalho */
+    padding: 35px 65px;
+    /* define espaçamento interno (cima/baixo e lados) */
+    width: 100%;
+    /* Ocupa a largura total da tela */
+    display: flex;
+    justify-content: space-between;
+    /* separar esquerda e direita */
+    /* empurra a logo pra esquerda e o menu pra direita */
+    align-items: center;
+    /* alinha os dois perfeitamente na vertical */
+}
+
+.logo img {
+    width: 150px;
+    height: 36px;
+}
+
+.menu ul {
+    list-style: none;
+    /* remove as bolinhas */
+    display: flex;
+    /* alinha na horizontal */
+    /* coloca os itens lado a lado */
+    gap: 20px;
+    /* afastar um item do outro */
+    /* espaço entre um link e outro */
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    /* tira o sublinhado */
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #5b7836;
+    /* quando passa o mouse encima do link fica dessa cor */
+
+}
+
+.menu-certo {
+    display: flex;
+    align-items: center;
+}
+
+.button-request {
+    all: unset;
+    display: flex;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: black
+    border 1px solid black;
+    border-bottom:1px solid black;
+}
+
+.secao-sobre {
+    background-color: #FFFFFF;
+    /* cor do fundo */
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    /* alinha a altura no meio */
+    justify-content: center;
+    /* centraliza tudo na tela */
+    gap: 40px;
+    /* espaço entre a imagem e o texto */
+    flex-wrap: wrap;
+
+}
+
+.caixa-imagem {
+    flex: 1;
+    /* cresce e divide o espaco com o texto */
+    min-width: 300px;
+    /* se a tela for menor que 300px, ele pula de linha */
+}
+
+.caixa-imagem img {
+    width: 100%; 
+    /* ocupa 100% do espaço da caixa dela */
+}
+
+.caixa-texto {
+    flex: 1;
+    /* cresce e divide o espaço com a imagem */
+    min-width: 300px;
+    /* o limite antes de quebrar a linha */
+}
+
+.caixa-texto h2 {
+    color: black;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.caixa-texto button {
+    background-color: black;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    border: none;
+}
